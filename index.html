@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- اضافه کردن کتابخانه AOS به صفحه -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+  .highlight-animation {
+    animation: highlight 1.5s ease;
+  }
+  
+  @keyframes highlight {
+    0% {
+      background-color: transparent;
+    }
+    30% {
+      background-color: rgba(255, 215, 0, 0.3);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
+  
+  .disabled {
+    color: #999 !important;
+    pointer-events: none !important;
+    text-decoration: none !important;
+    cursor: default !important;
+  }
+</style>
+
+</head>
+<body>
+
+    <header>
+       
+            
+
+        <div class="nav-top" style="background-color: aliceblue; width: 100%; height: 60px;">
+             <div style="float: right; margin: 8px;">
+                 <img src="" alt="logo">
+             </div>
+        </div>
+        
+<!-- منوی اصلی با دکمه همبرگری -->
+<div class="main-menu">
+  <ul>
+    <li><a href="#">درباره ما</a></li>
+    <li><a href="#">دپارتمان</a></li>
+    <li><a href="#" class="disabled" style="color: #999; pointer-events: none; text-decoration: none;">اخبار</a></li>
+    <!-- <li><a href="#">ارتباط با ما</a></li> -->
+    <li><a href="#services-section" class="services-link">خدمات</a></li>
+  </ul>
+</div>
+
+<!-- اورلی پس‌زمینه -->
+<div class="mobile-menu-overlay"></div>
+       <section class="banner">
+
+
+
+            <div class="container-text">
+                <h1>دکتر سعید نجات‌زادگان </h1>
+                <p>
+                    وکالت تخصصی در حوزه‌ استارتاپ‌ها، فناوری اطلاعات و جرایم رایانه‌ای، مشاوره‌ی حقوقی و داوری آنلاین
+                </p>
+
+            </div>
+
+            
+        
+
+            <div class="imageBanner">
+                 <img src="image/—Pngtree—man and laptop_19386362.png" alt="">
+              </div>
+
+       </section>
+    </header>
+    <div class="icon-bar">
+        <ul>
+
+            <li ><svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+                <path d="M8 14h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M16 14h.01"></path>
+                <path d="M8 18h.01"></path>
+                <path d="M12 18h.01"></path>
+                <path d="M16 18h.01"></path>
+              </svg>
+
+     
+     <h3>داوری</h3>   
+        </li>
+
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                <path d="M12 7v7"></path>
+                <path d="M9 10h6"></path>
+              </svg>
+              
+     
+     <h3>داوری</h3>     
+      </li>
+
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 1v4"></path>
+                <path d="M6 7l3 3"></path>
+                <path d="M18 7l-3 3"></path>
+                <path d="M3 12h4"></path>
+                <path d="M17 12h4"></path>
+                <path d="M12 19v4"></path>
+                <circle cx="12" cy="12" r="7"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              
+     
+     <h3>داوری</h3>   
+        </li>
+
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M4 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              
+              <h3>داوری</h3>
+              </li>
+
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+              </svg>
+             
+              </li>
+        </ul>
+    </div>
+
+    <!-- section -->
+
+    <nav id="nav-bottom">
+        <ul class="nav-list">
+          
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon"><i class="fas fa-phone-alt"></i></span>
+              <span class="nav-text">تماس</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link nav-link-primary">
+              <span class="nav-icon nav-icon-primary"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="nav-text">موقعیت</span>
+
+            </a>
+          </li>
+          
+          <li>
+            <a href="#" class="nav-link">
+              <span class="nav-icon"><i class="fab fa-telegram-plane"></i></span>
+              <span class="nav-text">تلگرام</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      
+
+    <!-- service -->
+
+    <section class="services-section" id="services-section">
+      <div class="section-title">
+          <h2>خدمات ما</h2>
+        </div>
+        
+        <div class="services-description">
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+          </p>
+        </div>
+        
+        <div class="services-container">
+          <!-- کارت خدمات 1 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="legal-management-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1M12 7C13.4 7 14.8 8.6 14.8 10V11.5C15.4 11.5 16 12.1 16 12.7V16.2C16 16.8 15.4 17.4 14.8 17.4H9.2C8.6 17.4 8 16.8 8 16.2V12.7C8 12.1 8.6 11.5 9.2 11.5V10C9.2 8.6 10.6 7 12 7M12 8.2C11.2 8.2 10.5 8.9 10.5 10V11.5H13.5V10C13.5 8.9 12.8 8.2 12 8.2Z"/>
+              </svg>
+              
+              
+              
+            </div>
+            <div class="service-content">
+              <h3>مدیریت حقوقی </h3>
+              <p>طراحی وب‌سایت‌های مدرن و ریسپانسیو با استفاده از آخرین تکنولوژی‌های روز دنیا</p>
+              <a href="#" class="service-btn">اطلاعات بیشتر</a>
+            </div>
+          </div>
+          
+          <!-- کارت خدمات 2 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="legal-consultation-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 22C8.4 22 8 21.6 8 21V18H4C2.9 18 2 17.1 2 16V4C2 2.9 2.9 2 4 2H20C21.1 2 22 2.9 22 4V16C22 17.1 21.1 18 20 18H13.9L10.2 21.7C9.9 22 9.4 22 9 22M4 4V16H9V19L12 16H20V4H4Z"/>
+                <path d="M7 7H17V8H7V7M7 10H17V11H7V10M7 13H14V14H7V13"/>
+                <path d="M15 12L17 13L15 14V12Z" fill="#2196F3"/>
+              </svg>
+              
+            </div>
+            <div class="service-content">
+              <h3> مشاوره حقوقی</h3>
+              <p>بهینه‌سازی سایت شما برای موتورهای جستجو و افزایش رتبه در نتایج گوگل</p>
+              <a href="#" class="service-btn">اطلاعات بیشتر</a>
+            </div>
+          </div>
+          
+          <!-- کارت خدمات 3 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="legal-management-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6C4.89 2 4 2.89 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M8 12V14H16V12H8M8 16V18H13V16H8"/>
+                <path d="M12 6L14 8H10L12 6Z"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3> وکالت</h3>
+              <p>محافظت از وب‌سایت شما در برابر حملات سایبری و تضمین امنیت اطلاعات</p>
+              <a href="#" class="service-btn">اطلاعات بیشتر</a>
+            </div>
+          </div>
+          
+          <!-- کارت خدمات 4 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="balance-scale-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20M12 4L7 9H5L3 11V13H9V11L7 9H12M12 4L17 9H19L21 11V13H15V11L17 9H12M10 20H14V22H10V20Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              </svg>
+              
+              
+              
+              
+            </div>
+            <div class="service-content">
+              <h3>داوری حرفه ای </h3>
+              <p>ارائه مشاوره تخصصی در زمینه بازاریابی دیجیتال و استراتژی‌های آنلاین</p>
+              <a href="#" class="service-btn">اطلاعات بیشتر</a>
+            </div>
+          </div>
+          
+          <!-- کارت خدمات 5 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg class="registry-services-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M7 7H17V8H7V7M7 10H17V11H7V10M7 13H17V14H7V13M7 16H14V17H7V16Z"/>
+                <circle cx="18" cy="18" r="2" fill="#2196F3"/>
+                <path d="M17.5 17.5L18.5 18.5" stroke="white" stroke-width="0.5"/>
+              </svg>
+              
+            </div>
+            <div class="service-content">
+              <h3> خدمات ثبتی</h3>
+              <p>طراحی و توسعه اپلیکیشن‌های موبایل برای پلتفرم‌های اندروید و iOS</p>
+              <a href="#" class="service-btn">اطلاعات بیشتر</a>
+            </div>
+          </div>
+          
+
+<!-- ایکون ساختمانی
+ 
+<svg class="registry-services-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 3L2 8V21H8V14H16V21H22V8L12 3M12 5.3L19 9V19H18V12H6V19H5V9L12 5.3M8 15H10V17H8V15M14 15H16V17H14V15M8 18H10V20H8V18M14 18H16V20H14V18"/>
+  <rect x="11" y="6" width="2" height="3" fill="#607D8B"/>
+  <circle cx="12" cy="10" r="1" fill="#FFC107"/>
+</svg>
+-->
+
+
+
+
+          <!-- کارت خدمات 6 -->
+          <div class="service-card">
+            <div class="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h3>تجربه کاربری</h3>
+              <p>بهبود تجربه کاربری و رابط کاربری برای افزایش رضایت مشتریان شما</p>
+              <a href="#" class="service-btn">اطلاعات بیشتر</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="site-footer">
+        <div class="footer-wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+          </svg>
+        </div>
+        
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-grid">
+              <!-- ستون اول - اطلاعات تماس (سمت راست) -->
+              <div class="footer-contact">
+                <h3>اطلاعات تماس</h3>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>تهران، خیابان ولیعصر، بالاتر از میدان ونک</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>۰۲۱-۸۸۶۶۷۷۵۵</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>info@example.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-clock"></i>
+                  <span>شنبه تا چهارشنبه: ۸ صبح تا ۶ عصر</span>
+                </div>
+              </div>
+              
+              <!-- ستون دوم - خدمات -->
+              <div class="footer-links">
+                <h3>خدمات ما</h3>
+                <ul>
+                  <li><a href="#">طراحی وب</a></li>
+                  <li><a href="#">توسعه اپلیکیشن</a></li>
+                  <li><a href="#">بهینه‌سازی سئو</a></li>
+                  <li><a href="#">بازاریابی دیجیتال</a></li>
+                  <li><a href="#">پشتیبانی فنی</a></li>
+                </ul>
+              </div>
+              
+              
+              
+              <!-- ستون چهارم - لوگو و توضیحات (سمت چپ) -->
+              <div class="footer-info">
+                <div class="footer-logo">
+                  <img src="logo.png" alt="لوگو">
+                </div>
+                <p class="footer-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                <div class="footer-social">
+                  <a href="#" aria-label="فیسبوک"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" aria-label="توییتر"><i class="fab fa-twitter"></i></a>
+                  <a href="#" aria-label="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                  <a href="#" aria-label="لینکدین"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="container">
+            <p>© ۱۴۰۲ تمامی حقوق محفوظ است | طراحی و توسعه با <i class="fas fa-heart"></i></p>
+          </div>
+        </div>
+      </footer>
+      
+      
+      
+
+    
+    <script src="js/bootstrap.js"></script>
+    <script src="animat.js/animation.js"> </script>
+    <script>
+        // کد ساده برای مخفی کردن منوی پایین هنگام اسکرول
+        document.addEventListener('DOMContentLoaded', function() {
+          var navBottom = document.getElementById('nav-bottom');
+          if (!navBottom) return;
+          
+          var lastScrollY = window.scrollY;
+          
+          window.addEventListener('scroll', function() {
+            var currentScrollY = window.scrollY;
+            
+            // اگر به پایین اسکرول می‌کنیم
+            if (currentScrollY > lastScrollY) {
+              navBottom.classList.add('hide');
+            } 
+            // اگر به بالا اسکرول می‌کنیم
+            else {
+              navBottom.classList.remove('hide');
+            }
+            
+            lastScrollY = currentScrollY;
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // عناصر مورد نیاز
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    
+    // باز کردن منو
+    hamburgerMenu.addEventListener('click', function() {
+        hamburgerMenu.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+        mobileMenuOverlay.classList.toggle('open');
+        document.body.style.overflow = 'hidden'; // جلوگیری از اسکرول صفحه
+    });
+    
+    // بستن منو با کلیک روی دکمه بستن
+    mobileMenuClose.addEventListener('click', closeMenu);
+    
+    // بستن منو با کلیک روی اورلی
+    mobileMenuOverlay.addEventListener('click', closeMenu);
+    
+    // بستن منو با کلیک روی لینک‌ها
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu ul li a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+    
+    // تابع بستن منو
+    function closeMenu() {
+        hamburgerMenu.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        mobileMenuOverlay.classList.remove('open');
+        document.body.style.overflow = ''; // برگرداندن اسکرول صفحه
+    }
+    
+    // مخفی کردن منوی موبایل در صفحات بزرگتر
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+});
+
+      </script>
+      
+</body>
+</html>
