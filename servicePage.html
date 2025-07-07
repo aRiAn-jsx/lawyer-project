@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات حقوقی - دفتر وکالت</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <!-- هدر صفحه -->
+    <header class="services-header">
+        <div class="services-header-content">
+            <h1>خدمات حقوقی ما</h1>
+            <p>ارائه کامل‌ترین خدمات حقوقی با بالاترین کیفیت و تخصص</p>
+        </div>
+    </header>
+
+    <!-- منوی اصلی -->
+    <nav class="main-menu">
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="servicePage.html">خدمات</a></li>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+    </nav>
+
+    <!-- بخش اصلی خدمات -->
+    <main class="services-main">
+        <div class="services-container">
+            <!-- معرفی خدمات -->
+            <div class="services-intro">
+                <h2>خدمات تخصصی حقوقی</h2>
+                <p>
+                    ما با بیش از ۱۵ سال تجربه در زمینه حقوق، آماده ارائه کامل‌ترین خدمات حقوقی به شما هستیم. 
+                    تیم متخصص ما در تمامی زمینه‌های حقوقی فعالیت می‌کند و بهترین راه‌حل‌ها را برای شما فراهم می‌آورد.
+                </p>
+            </div>
+
+            <!-- شبکه خدمات -->
+            <div class="services-grid">
+                <!-- خدمات حقوق خانواده -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=250&fit=crop" alt="حقوق خانواده">
+                        <div class="service-overlay">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">حقوق خانواده</h3>
+                        <p class="service-summary">
+                            مشاوره و انجام کلیه امور حقوقی مربوط به خانواده شامل طلاق، نفقه، حضانت و مهریه
+                        </p>
+                        <div class="service-details" id="family-details">
+                            <p>حقوق خانواده یکی از مهم‌ترین شاخه‌های حقوق است که به روابط خانوادگی و مسائل مربوط به آن می‌پردازد. ما با تجربه‌ای بیش از ۱۰ سال در این زمینه، آماده ارائه بهترین خدمات به شما هستیم.</p>
+                            <p>تیم ما با درک کامل از حساسیت موضوعات خانوادگی، با نهایت احترام و محرمانگی با شما همکاری می‌کند.</p>
+                        </div>
+                        <button class="service-btn" onclick="toggleDetails('family-details', this)">
+                            <i class="fas fa-plus"></i>
+                            <span>جزئیات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- خدمات حقوق تجاری -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop" alt="حقوق تجاری">
+                        <div class="service-overlay">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">حقوق تجاری</h3>
+                        <p class="service-summary">
+                            مشاوره و خدمات حقوقی در زمینه تجارت، شرکت‌ها، قراردادها و معاملات تجاری
+                        </p>
+                        <div class="service-details" id="commercial-details">
+                            <p>در دنیای پیچیده تجارت امروز، داشتن مشاور حقوقی متخصص ضروری است. ما با تجربه گسترده در حوزه حقوق تجاری، شریک قابل اعتماد کسب‌وکار شما هستیم.</p>
+                            <p>هدف ما کمک به رشد و توسعه کسب‌وکار شما با ارائه راه‌حل‌های حقوقی مؤثر و عملی است.</p>
+                        </div>
+                        <button class="service-btn" onclick="toggleDetails('commercial-details', this)">
+                            <i class="fas fa-plus"></i>
+                            <span>جزئیات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- خدمات حقوق کیفری -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=250&fit=crop" alt="حقوق کیفری">
+                        <div class="service-overlay">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">حقوق کیفری</h3>
+                        <p class="service-summary">
+                            وکالت در پرونده‌های کیفری، دفاع از متهمان و مشاوره در امور جزایی
+                        </p>
+                        <div class="service-details" id="criminal-details">
+                            <p>در پرونده‌های کیفری، داشتن وکیل مجرب و متخصص می‌تواند تأثیر تعیین‌کننده‌ای در نتیجه پرونده داشته باشد. ما با تجربه دفاع در صدها پرونده کیفری، آماده دفاع از حقوق شما هستیم.</p>
+                            <p>تیم ما با شناخت کامل از قوانین کیفری و رویه قضایی، بهترین استراتژی دفاعی را برای شما تدوین می‌کند.</p>
+                        </div>
+                        <button class="service-btn" onclick="toggleDetails('criminal-details', this)">
+                            <i class="fas fa-plus"></i>
+                            <span>جزئیات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- خدمات حقوق املاک -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop" alt="حقوق املاک">
+                        <div class="service-overlay">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">حقوق املاک</h3>
+                        <p class="service-summary">
+                            مشاوره و خدمات حقوقی در زمینه املاک، خرید و فروش، اجاره و مالکیت
+                        </p>
+                        <div class="service-details" id="realestate-details">
+                            <p>املاک یکی از مهم‌ترین دارایی‌های افراد محسوب می‌شود. ما با تخصص در حوزه حقوق املاک، از حقوق مالکانه شما محافظت می‌کنیم و در تمام معاملات ملکی همراه شما هستیم.</p>
+                            <p>هدف ما اطمینان از انجام معاملات ملکی شما با کمترین ریسک و بیشترین امنیت حقوقی است.</p>
+                        </div>
+                        <button class="service-btn" onclick="toggleDetails('realestate-details', this)">
+                            <i class="fas fa-plus"></i>
+                            <span>جزئیات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- خدمات حقوق کار -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=400&h=250&fit=crop" alt="حقوق کار">
+                        <div class="service-overlay">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">حقوق کار</h3>
+                        <p class="service-summary">
+                            مشاوره و دفاع در زمینه روابط کار، حقوق کارگران و کارفرمایان
+                        </p>
+                        <div class="service-details" id="labor-details">
+                            <p>روابط کار یکی از پیچیده‌ترین حوزه‌های حقوقی است که نیاز به تخصص و تجربه دارد. ما با شناخت کامل از قانون کار و رویه‌های قضایی، از حقوق کارگران و کارفرمایان دفاع می‌کنیم.</p>
+                            <p>تیم ما با درک عمیق از مسائل کاری، بهترین راه‌حل‌ها را برای حفظ حقوق طرفین ارائه می‌دهد.</p>
+                        </div>
+                        <button class="service-btn" onclick="toggleDetails('labor-details', this)">
+                            <i class="fas fa-plus"></i>
+                            <span>جزئیات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- خدمات حقوق بیمه -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=250&fit=crop" alt="حقوق بیمه">
+                        <div class="service-overlay">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">حقوق بیمه</h3>
+                        <p class="service-summary">
+                            مشاوره و پیگیری در امور بیمه، خسارات و غرامت‌های بیمه‌ای
+                        </p>
+                        <div class="service-details" id="insurance-details">
+                            <p>صنعت بیمه با قوانین و مقررات پیچیده‌ای همراه است. ما با تخصص در حوزه حقوق بیمه، از حقوق بیمه‌گذاران دفاع می‌کنیم و در مطالبه خسارات همراه شما هستیم.</p>
+                            <p>هدف ما اطمینان از دریافت حقوق کامل شما از شرکت‌های بیمه و حل سریع اختلافات است.</p>
+                        </div>
+                        <button class="service-btn" onclick="toggleDetails('insurance-details', this)">
+                            <i class="fas fa-plus"></i>
+                            <span>جزئیات بیشتر</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- بخش تماس سریع
+    <!-- بخش تماس سریع -->
+    <section class="quick-contact">
+        <div class="services-container">
+            <h2>نیاز به مشاوره حقوقی دارید؟</h2>
+            <p>
+                تیم متخصص ما آماده ارائه بهترین خدمات حقوقی به شما است. 
+                همین الان با ما تماس بگیرید و از مشاوره رایگان بهره‌مند شوید.
+            </p>
+            <div class="contact-buttons">
+                <a href="tel:+989123456789" class="contact-btn contact-btn-primary">
+                    <i class="fas fa-phone"></i>
+                    تماس فوری
+                </a>
+                <a href="mailto:info@lawyer.com" class="contact-btn contact-btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    ارسال ایمیل
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p>📞 تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+                    <p>📱 موبایل: ۰۹۱۲-۳۴۵۶۷۸۹</p>
+                    <p>✉️ ایمیل: info@lawyer.com</p>
+                    <p>📍 آدرس: تهران، خیابان ولیعصر، پلاک ۱۲۳</p>
+                </div>
+                <div class="footer-section">
+                    <h3>خدمات سریع</h3>
+                    <p><a href="#family-details">حقوق خانواده</a></p>
+                    <p><a href="#commercial-details">حقوق تجاری</a></p>
+                    <p><a href="#criminal-details">حقوق کیفری</a></p>
+                    <p><a href="#realestate-details">حقوق املاک</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>ساعات کاری</h3>
+                    <p>شنبه تا چهارشنبه: ۸:۰۰ - ۱۸:۰۰</p>
+                    <p>پنج‌شنبه: ۸:۰۰ - ۱۴:۰۰</p>
+                    <p>جمعه: تعطیل</p>
+                    <p>مشاوره اورژانسی: ۲۴ ساعته</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ما را دنبال کنید</h3>
+                    <div class="footer-social">
+                        <a href="#" title="تلگرام"><i class="fab fa-telegram"></i></a>
+                        <a href="#" title="اینستاگرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="لینکدین"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" title="واتساپ"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۲۰۲۴ دفتر وکالت. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- دکمه اسکرول به بالا -->
+    <div class="scroll-top-btn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- اسکریپت‌های جاوااسکریپت -->
+    <script>
+        // تابع اصلی برای نمایش/مخفی کردن جزئیات
+        function toggleDetails(detailsId, button) {
+            console.log('toggleDetails called with:', detailsId); // برای دیباگ
+            
+            const details = document.getElementById(detailsId);
+            const card = button.closest('.service-card');
+            const icon = button.querySelector('i');
+            const text = button.querySelector('span');
+            
+            if (!details || !card || !icon || !text) {
+                console.error('Elements not found:', {details, card, icon, text});
+                return;
+            }
+            
+            // بررسی وضعیت فعلی
+            const isExpanded = details.style.display === 'block';
+            
+            if (isExpanded) {
+                // بستن جزئیات
+                details.style.display = 'none';
+                card.classList.remove('expanded');
+                icon.className = 'fas fa-plus';
+                text.textContent = 'جزئیات بیشتر';
+                button.classList.remove('expanded');
+            } else {
+                // بستن سایر کارت‌های باز
+                closeAllDetails();
+                
+                // باز کردن جزئیات فعلی
+                details.style.display = 'block';
+                card.classList.add('expanded');
+                icon.className = 'fas fa-minus';
+                text.textContent = 'بستن جزئیات';
+                button.classList.add('expanded');
+                
+                // اسکرول نرم به کارت
+                setTimeout(() => {
+                    card.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }, 100);
+            }
+        }
+
+        // تابع برای بستن تمام جزئیات باز
+        function closeAllDetails() {
+            const allDetails = document.querySelectorAll('.service-details');
+            const allCards = document.querySelectorAll('.service-card');
+            const allButtons = document.querySelectorAll('.service-btn');
+            
+            allDetails.forEach(detail => {
+                detail.style.display = 'none';
+            });
+            
+            allCards.forEach(card => {
+                card.classList.remove('expanded');
+            });
+            
+            allButtons.forEach(button => {
+                const icon = button.querySelector('i');
+                const text = button.querySelector('span');
+                if (icon && text) {
+                    icon.className = 'fas fa-plus';
+                    text.textContent = 'جزئیات بیشتر';
+                    button.classList.remove('expanded');
+                }
+            });
+        }
+
+        // اسکرول به بالای صفحه
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // رویدادهای DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded successfully');
+            
+            // تست دکمه‌ها
+            const buttons = document.querySelectorAll('.service-btn');
+            console.log('Found buttons:', buttons.length);
+            
+            buttons.forEach((btn, index) => {
+                console.log(`Button ${index}:`, btn.getAttribute('onclick'));
+            });
+
+            // نمایش/مخفی کردن دکمه اسکرول به بالا
+            window.addEventListener('scroll', function() {
+                const scrollBtn = document.querySelector('.scroll-top-btn');
+                if (scrollBtn) {
+                    if (window.pageYOffset > 300) {
+                        scrollBtn.classList.add('visible');
+                    } else {
+                        scrollBtn.classList.remove('visible');
+                    }
+                }
+            });
+
+            // بستن جزئیات با کلیک خارج از کارت
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.service-card')) {
+                    closeAllDetails();
+                }
+            });
+
+            // بستن جزئیات با کلید Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeAllDetails();
+                }
+            });
+
+            // انیمیشن کارت‌ها هنگام اسکرول
+            function animateOnScroll() {
+                const cards = document.querySelectorAll('.service-card');
+                const windowHeight = window.innerHeight;
+                
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    if (cardTop < windowHeight - 100) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+
+            // تنظیم حالت اولیه کارت‌ها
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(50px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+
+            // اجرای انیمیشن
+            setTimeout(animateOnScroll, 100);
+            window.addEventListener('scroll', animateOnScroll);
+
+            // افکت ripple برای دکمه‌های تماس
+            document.querySelectorAll('.contact-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        if (ripple.parentNode) {
+                            ripple.remove();
+                        }
+                    }, 600);
+                });
+            });
+        });
+
+        // تنظیم ارتفاع برای موبایل
+        function adjustForMobile() {
+            if (window.innerWidth <= 768) {
+                document.querySelectorAll('.service-details').forEach(detail => {
+                    if (detail.style.display === 'block') {
+                        detail.style.maxHeight = '400px';
+                        detail.style.overflowY = 'auto';
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('resize', adjustForMobile);
+        window.addEventListener('load', adjustForMobile);
+    </script>
+
+    <!-- CSS اضافی برای افکت‌ها -->
+    <style>
+        .service-details {
+            display: none;
+            margin-top: 1rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-details p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #2c3e50;
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        .service-details p:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-card.expanded {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .service-btn.expanded {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .scroll-top-btn:hover {
+            background: linear-gradient(135deg, #2980b9, #1f5f8b);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* بهبود responsive */
+        @media (max-width: 768px) {
+            .service-details {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .scroll-top-btn {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</body>
+</html>

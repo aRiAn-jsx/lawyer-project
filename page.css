@@ -1,0 +1,932 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(228, 233, 236);
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* ==================== */
+/* هدر صفحه خدمات */
+/* ==================== */
+.services-header {
+    background: linear-gradient(135deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 50%, rgba(176, 45, 28, 1) 100%);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+}
+
+.services-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.services-header-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.services-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: slideInDown 1s ease-out;
+}
+
+.services-header p {
+    font-size: 20px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideInUp 1s ease-out 0.3s both;
+}
+
+/* ==================== */
+/* منوی اصلی */
+/* ==================== */
+.main-menu {
+    display: flex;
+    background-color: #302c2cee;
+    -webkit-backdrop-filter: blur(13px);
+    backdrop-filter: blur(13px);
+    border: 1px solid rgba(58, 55, 55, 0.728);
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -27px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-menu ul {
+    text-align: center;
+    list-style: none;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu ul li a {
+    color: #e4dede;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.main-menu ul li {
+    transition: all .3s ease;
+    position: relative;
+}
+
+.main-menu ul li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(228, 220, 220);
+}
+
+/* ==================== */
+/* بخش خدمات اصلی */
+/* ==================== */
+.services-main {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #fff 0%, #f9f9f9 100%);
+    position: relative;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 80px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.services-intro h2 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.services-intro h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 50%, rgba(176, 45, 28, 1) 100%);
+    border-radius: 2px;
+}
+
+.services-intro p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 30px auto 0;
+    line-height: 1.8;
+}
+
+/* ==================== */
+/* کارت‌های خدمات */
+/* ==================== */
+/* استایل‌های جدید برای service-card */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* تصویر و overlay */
+.service-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 50%, rgba(176, 45, 28, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay i {
+    font-size: 3rem;
+    color: white;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* محتوای کارت */
+.service-body {
+    padding: 1.5rem;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.service-summary {
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* جزئیات قابل گسترش */
+.service-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+.service-details.expanded {
+    max-height: 1000px;
+    opacity: 1;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.5s ease;
+}
+
+.service-details p {
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-size: 0.95rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* دکمه جزئیات */
+.service-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #ffd207e8, #e77204d3);
+
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-btn:hover {
+    background:    linear-gradient(135deg, #e9c111, #e77204);
+    ;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(207, 171, 10, 0.4);
+}
+
+.service-btn:active {
+    transform: translateY(0);
+}
+
+.service-btn i {
+    transition: transform 0.3s ease;
+}
+
+.service-btn.expanded i {
+    transform: rotate(45deg);
+}
+
+/* انیمیشن برای کارت هنگام گسترش */
+.service-card.expanded {
+    transform: scale(1.02);
+    z-index: 10;
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .service-card {
+        margin: 0 1rem;
+    }
+    
+    .service-image {
+        height: 180px;
+    }
+    
+    .service-body {
+        padding: 1rem;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-overlay i {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-image {
+        height: 150px;
+    }
+    
+    .service-body {
+        padding: 0.8rem;
+    }
+    
+    .service-title {
+        font-size: 1.2rem;
+    }
+    
+    .service-details p {
+        font-size: 0.9rem;
+    }
+}
+
+/* افکت ripple برای دکمه */
+.service-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: width 0.6s, height 0.6s, top 0.6s, left 0.6s;
+    transform: translate(-50%, -50%);
+}
+
+.service-btn:active::before {
+    width: 300px;
+    height: 300px;
+}
+
+
+/* ==================== */
+/* مودال */
+/* ==================== */
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: modalSlideIn 0.4s ease;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 100%);
+    color: white;
+    padding: 25px 30px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.close {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    }
+    .close:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .modal-body {
+        padding: 30px;
+    }
+
+    .modal-body h3 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    .modal-body p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .modal-body ul {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .modal-body ul li {
+        padding: 10px 0;
+        color: #555;
+        position: relative;
+        padding-right: 30px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .modal-body ul li::before {
+        content: "→";
+        position: absolute;
+        right: 0;
+        color: #dea216;
+        font-weight: bold;
+        font-size: 18px;
+    } */
+
+    /* ==================== */
+    /* بخش تماس سریع */
+    /* ==================== */
+    .quick-contact {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .quick-contact h2 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .quick-contact p {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-btn-primary {
+        background: linear-gradient(135deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 100%);
+        color: white;
+    }
+
+    .contact-btn-secondary {
+        background: white;
+        color: #dea216;
+        border: 2px solid #dea216;
+    }
+
+    .contact-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-btn-primary:hover {
+        box-shadow: 0 10px 25px rgba(222, 162, 22, 0.4);
+    }
+
+    .contact-btn-secondary:hover {
+        background: #dea216;
+        color: white;
+    }
+
+    /* ==================== */
+    /* فوتر */
+    /* ==================== */
+    .site-footer {
+        background: linear-gradient(to bottom, #2c3e50, #34495e);
+        color: white;
+        padding: 60px 0 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-section h3 {
+        color: #dea216;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        color: #bdc3c7;
+        text-decoration: none;
+        line-height: 1.6;
+        transition: all 0.3s ease;
+    }
+
+    .footer-section a:hover {
+        color: #dea216;
+    }
+
+    .footer-social {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .footer-social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(222, 162, 22, 0.2);
+        color: #dea216;
+        transition: all 0.3s ease;
+    }
+
+    .footer-social a:hover {
+        background: #dea216;
+        color: white;
+        transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 20px;
+        color: #95a5a6;
+    }
+
+    /* ==================== */
+    /* انیمیشن‌ها */
+    /* ==================== */
+    @keyframes slideInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes modalSlideIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8) translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    /* ==================== */
+    /* دکمه اسکرول به بالا */
+    /* ==================== */
+    .scroll-top-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 55px;
+        height: 55px;
+        background: linear-gradient(135deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 100%);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+
+    .scroll-top-btn.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .scroll-top-btn:hover {
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 8px 25px rgba(222, 162, 22, 0.4);
+    }
+
+    /* ==================== */
+    /* ریسپانسیو */
+    /* ==================== */
+    @media (max-width: 768px) {
+        .services-header h1 {
+            font-size: 36px;
+        }
+
+        .services-header p {
+            font-size: 16px;
+            padding: 0 20px;
+        }
+
+        .services-intro h2 {
+            font-size: 32px;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .service-card {
+            margin: 0 10px;
+        }
+
+        .main-menu ul {
+            width: 90%;
+            gap: 10px;
+        }
+
+        .main-menu ul li a {
+            font-size: 14px;
+            padding: 10px 5px;
+        }
+
+        .contact-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .modal-content {
+            width: 95%;
+            margin: 10% auto;
+        }
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .services-header {
+            height: 300px;
+        }
+
+        .services-header h1 {
+            font-size: 28px;
+        }
+
+        .services-intro h2 {
+            font-size: 26px;
+        }
+
+        .service-header {
+            padding: 30px 20px 15px;
+        }
+
+        .service-content {
+            padding: 0 20px 25px;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .service-icon i {
+            font-size: 35px;
+        }
+
+        .service-title {
+            font-size: 20px;
+        }
+
+        .main-menu ul li a {
+            font-size: 12px;
+        }
+
+        .scroll-top-btn {
+            width: 45px;
+            height: 45px;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+
+/* اضافه کردن این استایل‌ها به CSS موجود */
+
+/* انیمیشن ورود کارت‌ها */
+.service-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* استایل دکمه اسکرول به بالا */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffd207, #e77204);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(216, 203, 20, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background: linear-gradient(135deg, #dbbc07, #dd9804);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 230, 3, 0.4);
+}
+
+/* افکت ripple */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* بهبود انیمیشن گسترش */
+.service-details {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-details.expanded {
+    animation: expandDetails 0.5s ease-out forwards;
+}
+
+@keyframes expandDetails {
+    0% {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        max-height: 1000px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
