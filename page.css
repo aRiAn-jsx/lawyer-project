@@ -721,7 +721,7 @@ body {
         width: 55px;
         height: 55px;
         background: linear-gradient(135deg, rgba(222, 162, 22, 0.94) 0%, rgba(222, 134, 40, 1) 100%);
-        color: white;
+        color: rgb(29, 26, 26);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -928,5 +928,145 @@ body {
         max-height: 1000px;
         opacity: 1;
         transform: translateY(0);
+    }
+}
+.contracts-section,
+.legal-services-section,
+.litigation-section,
+.arbitration-section,
+.administrative-section {
+    padding: 4rem 0;
+    background: #f8f9fa;
+    margin: 2rem 0;
+}
+
+.contracts-section {
+    background: linear-gradient(135deg, #e9a513 0%, #d64106 100%);
+    color: white;
+}
+
+.legal-services-section {
+    background: linear-gradient(135deg, #e9a513 0%, #d64106 100%);
+    color: white;
+}
+
+.litigation-section {
+    background: linear-gradient(135deg, #e9a513 0%, #d64106 100%);
+    color: white;
+}
+
+.arbitration-section {
+    background: linear-gradient(135deg, #e9a513 0%, #d64106 100%);
+    color: white;
+}
+
+.administrative-section {
+    background: linear-gradient(135deg, #e9a513 0%, #d64106 100%);
+    color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.section-content.reverse {
+    direction: rtl;
+}
+
+.section-content.reverse .section-text {
+    direction: rtl;
+}
+
+.section-text {
+    padding: 2rem;
+}
+
+.section-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.section-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section-text ul li {
+    padding: 0.5rem 0;
+    padding-right: 2rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.section-text ul li:before {
+    content: "✓";
+    position: absolute;
+    right: 0;
+    color: #ffd207;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.section-image {
+    text-align: center;
+}
+
+.section-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.section-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section-content.reverse {
+        direction: ltr;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-text {
+        padding: 1rem;
+    }
+
+    .section-text p,
+    .section-text ul li {
+        font-size: 1rem;
     }
 }
